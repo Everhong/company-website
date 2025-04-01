@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/company-website/static/css/main.77333aa4.chunk.css",
+    "main.js": "/company-website/static/js/main.cd76ad72.chunk.js",
+    "main.js.map": "/company-website/static/js/main.cd76ad72.chunk.js.map",
+    "runtime~main.js": "/company-website/static/js/runtime~main.6d2ce991.js",
+    "runtime~main.js.map": "/company-website/static/js/runtime~main.6d2ce991.js.map",
+    "static/js/2.2df4d90f.chunk.js": "/company-website/static/js/2.2df4d90f.chunk.js",
+    "static/js/2.2df4d90f.chunk.js.map": "/company-website/static/js/2.2df4d90f.chunk.js.map",
+    "static/js/3.68d536b4.chunk.js": "/company-website/static/js/3.68d536b4.chunk.js",
+    "static/js/3.68d536b4.chunk.js.map": "/company-website/static/js/3.68d536b4.chunk.js.map",
+    "index.html": "/company-website/index.html",
+    "precache-manifest.109e303c57302cc56b799c39f62ecb61.js": "/company-website/precache-manifest.109e303c57302cc56b799c39f62ecb61.js",
+    "service-worker.js": "/company-website/service-worker.js",
+    "static/css/main.77333aa4.chunk.css.map": "/company-website/static/css/main.77333aa4.chunk.css.map",
+    "static/media/delivery.jpg": "/company-website/static/media/delivery.4e14945e.jpg",
+    "static/media/logo32.png": "/company-website/static/media/logo32.e1796661.png"
+  }
+}

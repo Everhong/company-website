@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+
+# Build output
+build/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# MacOS-specific files
+.DS_Store
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Dependency directories
+bower_components/
