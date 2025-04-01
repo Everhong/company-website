@@ -1,26 +1,17 @@
 {
   "files": {
-    "main.css": "/company-website/static/css/main.77333aa4.chunk.css",
-    "main.js": "/company-website/static/js/main.175b79fe.chunk.js",
-    "main.js.map": "/company-website/static/js/main.175b79fe.chunk.js.map",
-    "runtime-main.js": "/company-website/static/js/runtime-main.096d612c.js",
-    "runtime-main.js.map": "/company-website/static/js/runtime-main.096d612c.js.map",
-    "static/js/2.8cfee709.chunk.js": "/company-website/static/js/2.8cfee709.chunk.js",
-    "static/js/2.8cfee709.chunk.js.map": "/company-website/static/js/2.8cfee709.chunk.js.map",
-    "static/js/3.a00b73c5.chunk.js": "/company-website/static/js/3.a00b73c5.chunk.js",
-    "static/js/3.a00b73c5.chunk.js.map": "/company-website/static/js/3.a00b73c5.chunk.js.map",
+    "main.css": "/company-website/static/css/main.6b19788c.css",
+    "main.js": "/company-website/static/js/main.a5a6b2cb.js",
+    "static/js/453.fbc15508.chunk.js": "/company-website/static/js/453.fbc15508.chunk.js",
+    "static/media/logo32.png": "/company-website/static/media/logo32.a5010d4f9f6214e74f87.png",
+    "static/media/delivery.jpg": "/company-website/static/media/delivery.50002ea146b6c5875fc4.jpg",
     "index.html": "/company-website/index.html",
-    "precache-manifest.61a38fc8d5953f552141ecd586beb4e4.js": "/company-website/precache-manifest.61a38fc8d5953f552141ecd586beb4e4.js",
-    "service-worker.js": "/company-website/service-worker.js",
-    "static/css/main.77333aa4.chunk.css.map": "/company-website/static/css/main.77333aa4.chunk.css.map",
-    "static/js/2.8cfee709.chunk.js.LICENSE.txt": "/company-website/static/js/2.8cfee709.chunk.js.LICENSE.txt",
-    "static/media/delivery.jpg": "/company-website/static/media/delivery.4e14945e.jpg",
-    "static/media/logo32.png": "/company-website/static/media/logo32.e1796661.png"
+    "main.6b19788c.css.map": "/company-website/static/css/main.6b19788c.css.map",
+    "main.a5a6b2cb.js.map": "/company-website/static/js/main.a5a6b2cb.js.map",
+    "453.fbc15508.chunk.js.map": "/company-website/static/js/453.fbc15508.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.096d612c.js",
-    "static/js/2.8cfee709.chunk.js",
-    "static/css/main.77333aa4.chunk.css",
-    "static/js/main.175b79fe.chunk.js"
+    "static/css/main.6b19788c.css",
+    "static/js/main.a5a6b2cb.js"
   ]
 }
