@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./App.css";
 import logo from "./images/logo32.png"; // 公司的logo图片
 import deliveryImage from "./images/delivery.jpg"; // 配送图片
@@ -6,11 +7,33 @@ import deliveryImage from "./images/delivery.jpg"; // 配送图片
 function App() {
   const [trackingNumber, setTrackingNumber] = useState("");
   const [trackingInfo, setTrackingInfo] = useState(null);
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
   // 模拟物流追踪功能
   const trackPackage = () => {
     // 假设这是从服务器获取的追踪数据
     setTrackingInfo(`追踪码 ${trackingNumber} 的包裹正在配送中，预计到达时间：3天`);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // 发送邮件
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .send("service_jq7pnrd", "template_chsdpr3", formData, "OkQYV4tnxTr04W5ir")
+      .then(
+        (response) => {
+          alert("邮件已成功发送！");
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          alert("邮件发送失败：" + error.text);
+        }
+      );
   };
 
   return (
@@ -82,14 +105,33 @@ function App() {
         <h2>联系我们</h2>
         <p>电话: 123-456-7890</p>
         <p>邮箱: contact@delivery.com</p>
-        <form>
-          <input type="text" placeholder="您的名字" />
-          <input type="email" placeholder="您的邮箱" />
-          <textarea placeholder="您的消息"></textarea>
+        <form onSubmit={sendEmail}>
+          <input
+            type="text"
+            name="name"
+            placeholder="您的名字"
+            value={formData.name}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="您的邮箱"
+            value={formData.email}
+            onChange={handleInputChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="您的消息"
+            value={formData.message}
+            onChange={handleInputChange}
+            required
+          ></textarea>
           <button type="submit">发送消息</button>
         </form>
       </section>
-
       {/* Footer */}
       <footer>
         <p>© 2025 一心のDELIVERY. 保留所有权利.</p>
