@@ -23,6 +23,13 @@ function App() {
   // 发送邮件
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // 确保表单数据已经填写
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("请填写所有字段！");
+      return;
+    }
+
     emailjs
       .send("service_jq7pnrd", "template_chsdpr3", formData, "OkQYV4tnxTr04W5ir")
       .then(
@@ -132,6 +139,7 @@ function App() {
           <button type="submit">发送消息</button>
         </form>
       </section>
+
       {/* Footer */}
       <footer>
         <p>© 2025 一心のDELIVERY. 保留所有权利.</p>
